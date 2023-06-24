@@ -336,7 +336,7 @@ section{
   display: grid;
   place-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .wave {
@@ -379,12 +379,14 @@ section{
 
 .hidden{
   opacity: 0;
-  transform: translateY(100%);
-  transition: all 0.5s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s ease;
 }
 
 .show{
-  transform: translateY(0);
+  transform: translateX(0);
+  filter: blur(0);
   opacity: 1;
 
 }
