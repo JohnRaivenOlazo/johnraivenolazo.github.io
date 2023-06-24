@@ -322,13 +322,15 @@
 
 /*ABOUT SECTION*/
 
-.about{
+.about-container{
   color: white;
-  height: 700vh;
+  height: 200vh;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  font-size: 3rem;
   background-color: #1b1919;
+  padding: 0px 100px;
 }
 
 section{
@@ -339,7 +341,22 @@ section{
   min-height: 100vh;
 }
 
+.about-container .about-title{
+  margin-top: -200px;
+  color: #00FFFF; 
+}
+.about-container #profile{
+  position: relative;
+  margin-top: -300px;
+}
+
+.about-container #profile #about-divider{
+  color: #00FFFF;
+
+}
+
 .wave {
+  font-size: 70px;
   animation-name: wave-animation;  
   animation-duration: 2.5s;       
   animation-iteration-count: infinite;  
@@ -359,35 +376,69 @@ section{
   100% { transform: rotate( 0.0deg) }
 }
 
+
+.about-container .profile{
+  padding-right: 400px;
+}
 .about-container .profile img{
-  position: relative;
-  display: inline;
-  text-align: center;
-  justify-self: center;
-  margin-left: 20px;
-  border-radius: 50%;
-  border: 3px solid #00FFFF;
-  
+  position: absolute;
+  left: 130vh;
+  height: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5%;
 }
 
 .about-container .profile {
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   align-items: center;
+}
+
+.about-container .profile #about-header{
+  font-size: 3.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-container .profile #about-sub-header {
+  font-size: 1.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.about-container .profile #about-sub-header-2 {
+  font-size: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.about-container .profile #about-description {
+  font-size: 1.2rem;
+  font-weight: light;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fa-location-dot{
+  font-size: 50px;
 }
 
 .hidden{
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1.5s ease;
-  transition-delay: 0.7s;
+  transform: translateX(-300px);
+  transition: all 0.6s ease-out;
+  transition-delay: 1s;
 }
 
 .show{
   transform: translateX(0);
-  filter: blur(0);
   opacity: 1;
 
+}
+
+/**/
+
+footer{
+  height: 100vh;
+  background-color: red;
 }
