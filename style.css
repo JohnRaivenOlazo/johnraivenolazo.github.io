@@ -336,7 +336,7 @@ section{
   display: grid;
   place-items: center;
   text-align: center;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .wave {
