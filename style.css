@@ -320,10 +320,76 @@
     }
 }
 
+/*ABOUT SECTION*/
 
-#about{
-    color: white;
-    background-color: #1b1919;
-    height: 100vh;
+.about{
+  color: white;
+  height: 1000vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #1b1919;
 }
 
+section{
+  font-size: 2rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+.about-container .profile img{
+  position: relative;
+  display: inline;
+  text-align: center;
+  justify-self: center;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 3px solid #00FFFF;
+  
+}
+
+.about-container .profile {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.hidden{
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s;
+}
+
+.show{
+  transform: translateY(0);
+  opacity: 1;
+
+}
+
+/*WAVING HAND BAKA MAKALIMUTAN IH
+
+https://codepen.io/jakejarvis/pen/pBZWZw
+
+/*
