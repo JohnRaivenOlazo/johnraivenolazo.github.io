@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{   
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(77,77,77,1) 100%);
+}
+
+::-webkit-scrollbar-track{
+    background-color: #131314;
+}
+
+#particles-js {
+    position: relative;
+    height: 120vh;
+    text-align: center;
+    background-size: cover;
+    justify-content: center;
+    background-color: #1d1d20;
+}
+
+.header{
+    top: 25vh; left: 30vh; right: 30vh;
+    display: flex;
+    position: absolute; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header .header-title { 
+    cursor: default;
+    font-size: 5rem;
+    font-family: Arial;
+    margin-bottom: -10px;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 rgb(0, 0, 0), /* Top left */
+     1px -1px 0 rgb(0, 0, 0), /* Top right */
+    -1px 1px 0 rgb(0, 0, 0), /* Bottom left */
+     1px 1px 0 #000; /* Bottom right */
+}
+
+.header-title {
+    display: inline-block;
+    font-size: 36px;
+    position: relative;
+  }
+  
+  .header-title span {
+    display: inline-block;
+    transition: all 0.2s ease;
+    margin-right: -25px;
+  }
+
+  .header-title #space {
+    display: inline-block;
+    margin-right: -1px;
+  }
+  
+  .header-title span:hover {
+    transform: translateY(-11px);
+  }
+
+.header .header-sub-title {
+    cursor: default;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    font-size: 2rem;
+    color: #00FFFF; 
+    transition: all 0.3s ease;
+}
+
+.header .header-sub-title:hover {
+    transform: scale(1.2);
+}
+
+.header .header-description {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 0px 0.4px #00FFFF;
+}
+
+.header-logos{
+    display: flex;
+    margin-top: 20px;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+.header-logos i {
+    color: white;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+}
+
+.header-logos i:hover{
+    color: #00FFFF;
+}
+
+.fa-angle-down{
+    position: relative;
+    top: 30vh;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.fa-angle-down:hover {
+    transform: translateY(10px);
+  }
+
+
+#about{
+    color: white;
+    background-color: #00FFFF;
+    height: 100vh;
+}
+
