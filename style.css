@@ -146,8 +146,27 @@
   font-size: 3rem;
 }
 
+#about-sub-header-2{
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1px;
+}
+
 .about .profile-image{
   margin-right: 10vh;
+}
+
+.profile p{
+  text-indent: 10px;
+}
+
+.first{
+  line-height: 30px;
+}
+
+hr{
+  margin-right: 90vh;
 }
 
 .about .profile-image img{
@@ -156,6 +175,29 @@
   max-width: 100%;
   max-height: 100%;
   border-radius: 5%;
+}
+
+@media screen and (max-width:800px) {
+  
+
+  #about-header{
+    position: relative;
+    margin-top: 1px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+  }
+
+.about .profile-image{
+  position: absolute;
+}
+
+.about .profile-image img{
+  height: 200px;
+  width: 300px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5%;
+}
 }
 
 .hidden{
@@ -176,9 +218,23 @@
 
 }
 
-.fa-location-dot{
+.fa-location-dot {
   display: inline-block;
   font-size: 40px;
+  position: relative;
+  animation-name: locdot;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes locdot {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .wave {
