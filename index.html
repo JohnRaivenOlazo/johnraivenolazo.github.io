@@ -40,23 +40,21 @@
         </header>   
         
     <div class="about" id="about">
-
-        <section class="hidden" id="profile">
-            <div class="profile">
-                <img src="images/enhanced.png" alt="About Pic">
-                <p>
-                    <span id="about-header">Hi, I'm Raiven. </span><span class="wave">👋</span> 
-                    <br> 
-                    <span id="about-sub-header">Passionate and determined, my ultimate goal is to make a lasting impact in the world of technology.</span> 
-                    <br>
-                    <span id="about-sub-header-2">18-year-old student based from Philippines. <i class="fa-solid fa-location-dot"></i></span>
-                    <br>
-                    <br>
-                    <span id="about-description"> Outside the realm of coding, I am a well-rounded individual and a Cat Lover. I find inspiration in reading books, music, motivational videos and watching animes, which fuel my creativity and help me think outside the box when approaching software development challenges.</span>           
-                </p>
+            <div class="profile hidden">    
+                    <section class="">
+                    <h1 id="about-header">Hi, I'm Raiven.<span class="wave">👋</span></h1>
+                    </section>
+                    <section class="">
+                    <p id="about-sub-header">Passionate and determined, my ultimate goal is to make a lasting impact in the world of technology.</p> 
+                    </section>
+                    <p id="about-sub-header-2">18-year-old student based from Philippines. <i class="fa-solid fa-location-dot"></i></p>
+                    <section class="">
+                    <p id="about-description"> My expertise lies in coding and problem-solving, and I continuously strive to enhance my skills through dedicated self-study and hands-on project development. I firmly believe that technology has the power to transform lives and drive positive change, and I am eager to contribute to this transformative journey. <br> Outside the realm of coding, I am a well-rounded individual and a Cat Lover. I find inspiration in reading books, music, motivational videos and watching animes, which fuel my creativity and help me think outside the box when approaching software development challenges.</p>           
+                    </section>
             </div>
-        </section>     
-        
+            <div class="profile-image hidden2">
+            <img src="images/enhanced.png" alt="About Pic">
+            </div>           
     </div>
 
     <footer>
@@ -67,7 +65,7 @@
     window.addEventListener('scroll', isscroll);
 
     function isscroll(){
-        var raiven = document.querySelectorAll('.hidden');
+        var raiven = document.querySelectorAll('.hidden, .hidden2');
     for(var i = 0; i < raiven.length; i++){
         let windowHeight = window.innerHeight;
         let scrollTop = raiven[i].getBoundingClientRect().top;

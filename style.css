@@ -23,23 +23,25 @@
     background-color: #131314;
 }
 
+/*Header*/
+
 #particles-js {
-    position: relative;
-    height: 100vh;
-    text-align: center;
-    background-size: cover;
-    justify-content: center;
-    background-color: #1d1d20;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+  justify-content: center;
+  background-color: #1d1d20;
 }
 
 .header{
     top: 25vh; left: 30vh; right: 30vh;
     display: flex;
     position: absolute; 
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .header .header-title { 
@@ -47,11 +49,6 @@
     font-size: 4rem;
     font-family: Arial;
     color: white;
-    text-shadow: 
-    -1px -1px 0 rgb(0, 0, 0), /* Top left */
-     1px -1px 0 rgb(0, 0, 0), /* Top right */
-    -1px 1px 0 rgb(0, 0, 0), /* Bottom left */
-     1px 1px 0 #000; /* Bottom right */
 }
 
   .header-title span {
@@ -122,25 +119,70 @@
 /*ABOUT SECTION*/
 
 .about{
-  color: white;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  font-size: 3rem;
+  padding: 0 15vh;
+  min-height: 100vh;
   background-color: #1b1919;
-  padding: 5vh 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.about .profile{
+  position: relative;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
+.about .profile #about-header, #about-sub-header, #about-sub-header-2, #about-description{
+  color: white;
+}
 
-.about #profile #about-divider{
-  color: #00FFFF;
+#about-header{
+  position: relative;
+  margin-top: -100px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
 
+.about .profile-image{
+  margin-right: 10vh;
+}
+
+.about .profile-image img{
+  height: 300px;
+  width: 800px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5%;
+}
+
+.hidden{
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 0.6s ease-out;
+}
+
+.hidden2{
+  opacity: 0;
+  transform: translateX(500px);
+  transition: all 0.6s ease-out;
+}
+
+.active{
+  transform: translateX(0);
+  opacity: 1;
+
+}
+
+.fa-location-dot{
+  display: inline-block;
+  font-size: 40px;
 }
 
 .wave {
-  font-size: 70px;
+  font-size: 50px;
   animation-name: wave-animation;  
   animation-duration: 2.5s;       
   animation-iteration-count: infinite;  
@@ -158,77 +200,6 @@
    50% { transform: rotate(10.0deg) }
    60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
-}
-
-
-.about .profile{
-  padding-right: 400px;
-}
-.about .profile img{
-  position: absolute;
-  left: 130vh;
-  height: 300px;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 5%;
-}
-
-.about .profile {
-  display: flex;
-  justify-content: center;
-  text-align: left;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.about .profile #about-header{
-  font-size: 3.0rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.about .profile #about-sub-header {
-  font-size: 1.3rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-
-.about-divider{
-  position: relative;
-  height: 2px;
-  width: 2px;
-  background-color: red;
-}
-
-.about .profile #about-sub-header-2 {
-  font-size: 1.5rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight: bold;
-}
-
-.about .profile #about-description {
-  font-size: 1.2rem;
-  font-weight: light;
-}
-
-.fa-location-dot{
-  font-size: 50px;
-}
-
-.hidden{
-  font-size: 2rem;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  min-height: 100vh;
-  opacity: 0;
-  transform: translateX(-300px);
-  transition: all 0.6s ease-out;
-}
-
-.active{
-  transform: translateX(0);
-  opacity: 1;
-
 }
 
 /**/
