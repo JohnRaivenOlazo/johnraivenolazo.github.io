@@ -29,7 +29,7 @@
                 <span>z</span>
                 <span>o</span>
             </h1>
-            <h2 class="header-sub-title">Software Engineer</h2>
+            <h2 class="header-sub-title">Aspiring Software Engineer</h2>
             <p class="header-description">Crafting Exceptional, Accessible Software Solutions and Web Experiences.</p>
             <div class="header-logos">
             <a href="https://www.facebook.com/johnraivenolazo" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -40,37 +40,52 @@
         </header>   
         
     <div class="about" id="about">
-        <div class="about-container">
-        <section class="about-title">
-            <h1>About Me</h1>
-        </section>
+
         <section class="hidden" id="profile">
             <div class="profile">
-                <img src="images/about-pic.jpg" alt="About Pic">
+                <img src="images/enhanced.png" alt="About Pic">
                 <p>
                     <span id="about-header">Hi, I'm Raiven. </span><span class="wave">👋</span> 
                     <br> 
                     <span id="about-sub-header">Passionate and determined, my ultimate goal is to make a lasting impact in the world of technology.</span> 
                     <br>
-                    <br>
                     <span id="about-sub-header-2">18-year-old student based from Philippines. <i class="fa-solid fa-location-dot"></i></span>
                     <br>
-                    <span id="about-divider">__________</span>
-                    <br><br>
+                    <br>
                     <span id="about-description"> Outside the realm of coding, I am a well-rounded individual and a Cat Lover. I find inspiration in reading books, music, motivational videos and watching animes, which fuel my creativity and help me think outside the box when approaching software development challenges.</span>           
                 </p>
             </div>
         </section>     
-        </div>
+        
     </div>
 
     <footer>
 
     </footer>
 
+<script>
+    window.addEventListener('scroll', isscroll);
 
+    function isscroll(){
+        var raiven = document.querySelectorAll('.hidden');
+    for(var i = 0; i < raiven.length; i++){
+        let windowHeight = window.innerHeight;
+        let scrollTop = raiven[i].getBoundingClientRect().top;
+        let offset = 300;
+
+        if(scrollTop < windowHeight - offset){
+            raiven[i].classList.add('active');
+        }
+        else{
+            raiven[i].classList.remove('active');
+        }
+    }
+        
+    }
+
+
+</script>
     <script src="particles.js-master/particles.js"></script>
     <script src="particles.js-master/demo/js/app.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
