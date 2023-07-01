@@ -31,7 +31,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222222;
+  background-color: #333333;
 }
 
 .navbar-container{
@@ -160,7 +160,7 @@
   position: relative;
   background-size: cover;
   justify-content: center;
-  background-color: #1d1d20;
+  background-color: #293241;
 }
 
 .header{
@@ -346,7 +346,7 @@
 .about{
   padding: 0 15vh;
   min-height: 100vh;
-  background-color: #1b1919;
+  background-color: #F8F8F8;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -362,7 +362,7 @@
 }
 
 .about .profile #about-header, #about-sub-header, #about-sub-header-2, #about-description{
-  color: white;
+  color: black;
 }
 
 #about-header{
@@ -481,11 +481,71 @@ hr{
   100% { transform: rotate( 0.0deg) }
 }
 
-/**/
-
-footer{
+/* Skills section styles */
+.skills {
   height: 100vh;
-  background-color: rgb(19, 16, 16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EE6C4D;
 }
 
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Projects section styles */
+.projects {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4F86C6;
+}
+
+/* Certifications section styles */
+.certifications {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BB4430;
+}
+
+/* Contact section styles */
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
