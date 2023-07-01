@@ -122,11 +122,14 @@
   min-width: 100%;
   height: 110vh;
   z-index: 2;
-  transition: all 0.5s ease;
   background-color: black;
   top: 0;
-  right: -100%;
+  transition: all 0.5s ease;
+  left: 100%;
+}
 
+.dropdown.active{
+  left: 0;
 }
 
 .dropdown .dropdown-title{
@@ -136,10 +139,6 @@
   line-height: 180px;
 }
 
-.dropdown.active{
-  right: 0;
-  position: scroll;
-}
 
 .dropdown li{
   margin-bottom: 15px;
@@ -346,19 +345,10 @@
 
 .about{
   padding: 0 15vh;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #F8F8F8;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.about .profile{
-  position: relative;
-  padding-right: 100px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
   justify-content: space-between;
 }
 
@@ -385,7 +375,7 @@
   font-size: 1rem;
   font-style: italic;
   line-height: 20px;
-  padding-right: 10rem;
+  padding-right: 12rem;
 }
 
 .profile p{
@@ -400,13 +390,17 @@ hr{
   margin-right: 90vh;
 }
 
-.about .profile-image{
-  position: absolute;
+.about .profile-image {
+  position: relative;
+  float: right;
   margin-top: -10vh;
   max-width: 100%;
   max-height: 100%;
-  right: 0;
+  height: auto; /* Change height to 'auto' to maintain aspect ratio */
+  width: 200px;
+  margin-right: 2px;
 }
+
 
 @media screen and (max-width:600px){
   .about .profile-image{
