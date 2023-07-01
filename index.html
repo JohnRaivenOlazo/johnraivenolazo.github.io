@@ -8,6 +8,30 @@
     <script src="https://kit.fontawesome.com/bfa23f23ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-title"><h1>Portfolio</h1></div>
+        <ul class="navbar-container">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="dropdown">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <div id="particles-js"></div>
         <header class="header">
             <h1 id='header-title-id' class="header-title">
@@ -78,6 +102,17 @@
     }
         
     }
+
+
+
+    /*NAVBAR BUTTON*/
+    burger = document.querySelector('.navbar-icon');
+    navactive = document.querySelector('.dropdown');
+    burger.addEventListener('click', function(){
+        burger.classList.toggle('active');
+        navactive.classList.toggle('active');
+    });
+
 
 
 </script>

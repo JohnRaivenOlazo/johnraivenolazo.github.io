@@ -23,6 +23,128 @@
     background-color: #131314;
 }
 
+/*Navbar*/
+.navbar{
+  position: relative;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222222;
+}
+
+.navbar-container{
+  display: flex;
+}
+
+.navbar-title{  
+  color: white;
+  z-index: 3;
+}
+
+.navbar-container li{
+  margin-left: 20px;
+}
+
+.navbar-container li a{
+  color: rgb(255, 255, 255);
+  font-weight: 50px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.navbar-container li a:hover{
+  color: #00FFFF;
+  text-decoration: underline;
+  font-weight: 50px;
+  text-transform: uppercase;
+}
+
+.navbar-icon{
+  display: none;
+
+}
+
+.dropdown{
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+.navbar-container{
+    display: none;
+  }
+  
+.navbar-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.navbar-icon .line{
+  margin-right: 20px;
+  height: 3px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.navbar-icon.active{
+  right: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.navbar-icon.active .line:nth-child(1){
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-icon.active .line:nth-child(even){
+  opacity: 0;
+}
+
+.navbar-icon.active .line:nth-child(3){
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.dropdown{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  min-width: 70%;
+  height: 120vh;
+  z-index: 2;
+  transition: all 0.5s ease;
+  background-color: black;
+  top: 0;
+  right: -100%;
+
+}
+
+.dropdown.active{
+  right: 0;
+  position: fixed;
+}
+
+.dropdown li{
+  margin-bottom: 15px;
+}
+
+.dropdown li a{
+  color: white;
+  margin-left: 100px;
+}
+
+
+}
+
+
 /*Header*/
 
 #particles-js {
