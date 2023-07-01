@@ -27,6 +27,7 @@
 .navbar{
   position: relative;
   padding: 5px;
+  border-bottom: 1px solid #00FFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,6 +36,7 @@
 
 .navbar-container{
   display: flex;
+  margin-right: 20px;
 }
 
 .navbar-title{  
@@ -43,7 +45,7 @@
 }
 
 .navbar-container li{
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .navbar-container li a{
@@ -82,7 +84,7 @@
     justify-content: space-between;
     height: 20px;
     transition: all 0.3s ease;
-    z-index: 3;
+    z-index: 999;
 }
 
 .navbar-icon .line{
@@ -90,7 +92,7 @@
   height: 3px;
   width: 20px;
   background-color: rgb(255, 255, 255);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar-icon.active{
@@ -103,7 +105,7 @@
   transform: rotate(45deg) translate(6px, 6px);
 }
 
-.navbar-icon.active .line:nth-child(even){
+.navbar-icon.active .line:nth-child(2){
   opacity: 0;
 }
 
@@ -115,10 +117,9 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  min-width: 70%;
-  height: 120vh;
+  text-align: center;
+  min-width: 100%;
+  height: 110vh;
   z-index: 2;
   transition: all 0.5s ease;
   background-color: black;
@@ -127,9 +128,16 @@
 
 }
 
+.dropdown .dropdown-title{
+  color: white;
+  margin-top: 20px;
+  font-size: 2rem;
+  line-height: 180px;
+}
+
 .dropdown.active{
   right: 0;
-  position: fixed;
+  position: scroll;
 }
 
 .dropdown li{
@@ -138,7 +146,6 @@
 
 .dropdown li a{
   color: white;
-  margin-left: 100px;
 }
 
 
