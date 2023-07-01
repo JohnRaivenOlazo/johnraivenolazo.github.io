@@ -346,6 +346,7 @@
 .about{
   padding: 0 15vh;
   min-height: 100vh;
+  overflow-y: hidden;
   background-color: #F8F8F8;
   display: flex;
   align-items: center;
