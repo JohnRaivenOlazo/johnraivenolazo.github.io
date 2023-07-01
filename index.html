@@ -73,14 +73,14 @@
 
     <section class="about" id="about">
         <div class="profile">
-          <div class="profile-image">
+          <div class="profile-image hidden2">
             <img src="images/enhanced.png" alt="About Pic">
           </div>
           <div class="profile-content">
-            <h1 id="about-header">Hi, I'm Raiven.<span class="wave">👋</span></h1>
-            <p id="about-sub-header">18-year-old student based in the Philippines. <i class="fa-solid fa-location-dot"></i></p>
-            <hr>
-            <p id="about-sub-header-2">Passionate and determined, my ultimate goal is to make a lasting impact in the world of technology. My expertise lies in coding and problem-solving, and I continuously strive to enhance my skills through dedicated self-study and hands-on project development. I firmly believe that technology has the power to transform lives and drive positive change, and I am eager to contribute to this transformative journey. Outside the realm of coding, I am a well-rounded individual and a cat lover. I find inspiration in reading books, music, motivational videos, and watching anime, which fuel my creativity and help me think outside the box when approaching software development challenges.</p>
+            <h1 id="about-header" class="hidden">Hi, I'm Raiven.<span class="wave">👋</span></h1>
+            <p id="about-sub-header" class="hidden">18-year-old student based in the Philippines. <i class="fa-solid fa-location-dot"></i></p>
+            <hr class="hidden">
+            <p id="about-sub-header-2" class="hidden">Passionate and determined, my ultimate goal is to make a lasting impact in the world of technology. My expertise lies in coding and problem-solving, and I continuously strive to enhance my skills through dedicated self-study and hands-on project development. I firmly believe that technology has the power to transform lives and drive positive change, and I am eager to contribute to this transformative journey. Outside the realm of coding, I am a well-rounded individual and a cat lover. I find inspiration in reading books, music, motivational videos, and watching anime, which fuel my creativity and help me think outside the box when approaching software development challenges.</p>
           </div>
         </div>
       </section>
@@ -138,7 +138,30 @@
     </footer>
 
     <script>
-        // Your JavaScript code here
+        window.addEventListener('scroll', isscroll);
+
+        function isscroll() {
+            var raiven = document.querySelectorAll('.hidden, .hidden2');
+            for (var i = 0; i < raiven.length; i++) {
+                let windowHeight = window.innerHeight;
+                let scrollTop = raiven[i].getBoundingClientRect().top;
+                let offset = 300;
+
+                if (scrollTop < windowHeight - offset) {
+                    raiven[i].classList.add('active');
+                } else {
+                    raiven[i].classList.remove('active');
+                }
+            }
+        }
+
+        /*NAVBAR BUTTON*/
+        burger = document.querySelector('.navbar-icon');
+        navactive = document.querySelector('.dropdown');
+        burger.addEventListener('click', function () {
+            burger.classList.toggle('active');
+            navactive.classList.toggle('active');
+        });
     </script>
 
     <script src="particles.js-master/particles.js"></script>
