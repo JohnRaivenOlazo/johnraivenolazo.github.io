@@ -69,6 +69,8 @@
 
 .dropdown{
   display: none;
+  left: 100%;
+  transition: all 0.3s ease;
 }
 
 
@@ -113,8 +115,7 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-
-.dropdown{
+.dropdown.active{
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -124,15 +125,10 @@
   z-index: 2;
   background-color: black;
   top: 0;
-  transition: all 0.5s ease;
-  left: 100%;
-}
-
-.dropdown.active{
   left: 0;
 }
 
-.dropdown .dropdown-title{
+.dropdown.active .dropdown-title{
   color: white;
   margin-top: 20px;
   font-size: 2rem;
@@ -140,11 +136,11 @@
 }
 
 
-.dropdown li{
+.dropdown.active li{
   margin-bottom: 15px;
 }
 
-.dropdown li a{
+.dropdown.active li a{
   color: white;
 }
 
@@ -368,14 +364,13 @@
   font-size: 1.5rem;
   font-style: italic;
   font-weight: bold;
-  line-height: 5px;
+  line-height: 30px;
 }
 
 #about-sub-header-2{
   font-size: 1rem;
   font-style: italic;
   line-height: 20px;
-  padding-right: 12rem;
 }
 
 .profile p{
@@ -393,12 +388,12 @@ hr{
 .about .profile-image {
   position: relative;
   float: right;
-  margin-top: -10vh;
   max-width: 100%;
   max-height: 100%;
   height: auto; /* Change height to 'auto' to maintain aspect ratio */
   width: 200px;
-  margin-right: 2px;
+  margin-right: 120px;
+  padding-left: 1rem;
 }
 
 
