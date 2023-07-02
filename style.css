@@ -151,7 +151,7 @@
 /*Header*/
 
 #particles-js {
-  height: 100vh;
+  height: 105vh;
   text-align: center;
   position: relative;
   background-size: cover;
@@ -390,7 +390,7 @@ hr{
   float: right;
   max-width: 100%;
   max-height: 100%;
-  height: auto; /* Change height to 'auto' to maintain aspect ratio */
+  height: auto; 
   width: 200px;
   margin-right: 120px;
   padding-left: 1rem;
