@@ -25,13 +25,15 @@
 
 /*Navbar*/
 .navbar{
-  position: relative;
+  position: fixed;
   padding: 5px;
   border-bottom: 1px solid #00FFFF;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #333333;
+  z-index: 999;
 }
 
 .navbar-container{
@@ -96,7 +98,6 @@
 
 .navbar-icon.active{
   right: 0;
-  position: fixed;
   z-index: 999;
 }
 
@@ -354,7 +355,6 @@
 
 #about-header{
   position: relative;
-  margin-top: -100px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
 }
@@ -393,7 +393,7 @@ hr{
   height: auto; 
   width: 200px;
   margin-right: 120px;
-  padding-left: 1rem;
+
 }
 
 
@@ -421,7 +421,6 @@ hr{
 
 .hidden2{
   opacity: 0;
-  transform: translateX(100%);
   transition: all 0.6s ease-out;
 }
 
@@ -471,6 +470,68 @@ hr{
   100% { transform: rotate( 0.0deg) }
 }
 
+
+@media screen and (max-width: 800px){
+  
+  .about{
+    padding: 0 1vh;
+    height: 100vh;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #about-header{
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
+  }
+  
+  #about-sub-header{
+    position: relative;
+    font-size: 1.3rem;  
+    font-style: italic;
+    font-weight: bold;
+    line-height: 20px;
+    text-indent: 0;
+    margin-right: 10px;
+  }
+  
+  #about-sub-header-2{
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 20px;
+  }
+  
+  .profile p{
+    text-indent: 10px;
+  }
+  
+  .first{
+    line-height: 30px;
+  }
+  
+  .about .profile-image img{
+    height: 230px;
+    width: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+    right: 100px;
+  }
+
+  .fa-location-dot {
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    animation-name: locdot;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}
+
 /* Skills section styles */
 .skills {
   height: 100vh;
@@ -484,7 +545,7 @@ hr{
 .skills-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 100px;
   max-width: 800px;
 }
 
