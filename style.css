@@ -26,14 +26,19 @@
 /*Navbar*/
 .navbar{
   position: fixed;
-  padding: 5px;
-  border-bottom: 1px solid #00FFFF;
+  padding: 10px;
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   background-color: #333333;
   z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.navbar-scrolled{
+  padding-top: 20px;
+  background-color: transparent;
 }
 
 .navbar-container{
