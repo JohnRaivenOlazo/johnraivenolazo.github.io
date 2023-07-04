@@ -376,6 +376,7 @@
   font-size: 1rem;
   font-style: italic;
   line-height: 20px;
+  margin-right: 250px;
 }
 
 .profile p{
@@ -391,22 +392,15 @@ hr{
 }
 
 .about .profile-image {
-  position: relative;
-  float: right;
+  position: absolute;
+  right: 0;
   max-width: 100%;
   max-height: 100%;
   height: auto; 
   width: 200px;
   margin-right: 120px;
+  z-index: 4;
 
-}
-
-
-@media screen and (max-width:600px){
-  .about .profile-image{
-    position: relative; 
-    right: 0;
-  }
 }
 
 .about .profile-image img{
@@ -479,7 +473,7 @@ hr{
 @media screen and (max-width: 800px){
   
   .about{
-    padding: 0 1vh;
+    padding: 1vh 10vh;
     height: 100vh;
     background-color: #F8F8F8;
     display: flex;
@@ -500,13 +494,13 @@ hr{
     font-weight: bold;
     line-height: 20px;
     text-indent: 0;
-    margin-right: 10px;
   }
   
   #about-sub-header-2{
     font-size: 0.8rem;
     font-style: italic;
     line-height: 20px;
+    margin-right: 0;
   }
   
   .profile p{
@@ -516,14 +510,18 @@ hr{
   .first{
     line-height: 30px;
   }
+
+  .about .profile-image{
+    position: relative; 
+    right: 0;
+  }
   
   .about .profile-image img{
-    height: 230px;
+    height: 200px;
     width: 150px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 5%;
-    right: 100px;
   }
 
   .fa-location-dot {
