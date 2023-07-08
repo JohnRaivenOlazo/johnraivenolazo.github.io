@@ -82,6 +82,9 @@ body::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 800px) {
 
+.navbar{
+  justify-content: flex-end;
+}
 .navbar-desktop{
     display: none;
   }
