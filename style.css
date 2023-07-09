@@ -465,6 +465,7 @@ body::-webkit-scrollbar-thumb{
 
 .hidden2{
   opacity: 0;
+  transform: translateY(-100%);
   transition: all 0.6s ease-out;
 }
 
