@@ -325,6 +325,7 @@ body::-webkit-scrollbar-thumb{
   justify-content: space-between;
   align-items: center;
   width: 70rem;
+  padding: 1rem 0;
 }
 
 .about-title{
@@ -422,6 +423,7 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 300px){
   
   .about-main{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -456,23 +458,24 @@ body::-webkit-scrollbar-thumb{
   }
   
   #about-sub-header-2{
+    margin-top: 25vh;
     font-size: 0.8rem;
     font-weight: lighter;
     line-height: 20px;
   }
   
   .about-image {
-    display: none;
+    top: 33px;
+    left: 61px;
     position: absolute;
     max-width: 100%;
     max-height: 100%;
-    height: auto; 
-    width: 300px;
+    height: 130px; 
+    width: 400px;
     z-index: 4;
   }
   
   .about-image img{
-    height: 310px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 5%;
