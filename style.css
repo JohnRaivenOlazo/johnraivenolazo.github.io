@@ -15,6 +15,9 @@
 }
 
 :root{
+  --bg-color: #081b29;
+  --secondary-bg-color: #112e42;
+  --text-color: #ededed;
   --main-color: #020617;
   --secondary-color: #6c6cfc;
 }
@@ -250,7 +253,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .header{
-    top: 15vh; left: 15vh; right: 15vh;
+    top: 10vh; left: 5vh; right: 5vh;
     display: flex;
     position: absolute; 
     text-align: center;
@@ -501,7 +504,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-evenly;
     align-items: center;
     min-height: 105vh;
-    padding: 0 5rem;
+    padding: 0 3rem;
     background-color: var(--main-color);
   }
   
